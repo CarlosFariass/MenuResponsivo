@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+        <html lang="PT">
+            <head>
+              <meta charset="UTF-8">
+                <title>Responsive Menu with HTML CSS and a litle bit of JS</title>
+                <link rel="stylesheet" href="doc.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+         $(document).ready(function(){
+           $(".hamburger-btn .fa-times").hide();
+
+         $(".hamburger-btn .fa-bars").click(function(){
+           $(this).hide();
+           $(".hamburger-btn .fa-times").show();
+           $(".mob ul").addClass("active");
+         });
+
+         $(".hamburger-btn .fa-times").click(function(){
+           $(this).hide();
+           $(".hamburger-btn .fa-bars").show();
+           $(".mob ul").removeClass("active");
+         });
+         });
+       </script>
+     </head>
+     <body>
+       <div class="container">
+          <nav class="desk">
+            <ul>
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">maps</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </nav>
+
+          <nav class="mob">
+            <div class="hamburger-btn">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <ul>
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">maps</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </nav>
+
+          <div class="header">
+        </div>
+      </div>
+
+        <section>
+            
+          
+        </section>
+
+      </body>
+</html>
